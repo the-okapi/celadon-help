@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+:root {
+	font-family:
+		'Fira Sans',
+		-apple-system,
+		'Inter',
+		system-ui,
+		sans-serif;
+}
+
+.light {
+	color-scheme: light;
+	--bg: #ffffff;
+	--p: #000000;
+	--o: #bfbfbf;
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+.dark {
+	color-scheme: dark;
+	--bg: #222222;
+	--fg: #fafafa;
+	--o: #444444;
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+.under:hover {
+	text-decoration: underline 1.5px;
+}

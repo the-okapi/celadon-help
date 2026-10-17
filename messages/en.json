@@ -1,0 +1,9 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"light": "Light",
+	"dark": "Dark",
+	"home": "Home",
+	"repaper_help": "Repaper Help",
+	"welcome_to": "Welcome to",
+	"directory": "Directory"
+}

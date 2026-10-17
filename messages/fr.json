@@ -1,0 +1,9 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"light": "Clair",
+	"dark": "Sombre",
+	"home": "Accueil",
+	"repaper_help": "Aide pour Repaper",
+	"welcome_to": "Bienvenue à",
+	"directory": "Annuaire"
+}
