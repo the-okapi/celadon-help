@@ -15,7 +15,7 @@
 <ModeWatcher darkClassNames={['dark']} lightClassNames={['light']} defaultMode="system" />
 
 <svelte:head>
-	<title>{page.data.title ?? m.home()} | {m.repaper_help()}</title>
+	<title>{page.data.title ?? m.home()} | {m.celadon_help()}</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 

@@ -1,3 +1,3 @@
-# Repaper Help
+# Celadon Help
 
-Help page for [Repaper](https://repaper.unlimitedstuffltd.com)
+Help page for [Celadon](https://celadon.work)
