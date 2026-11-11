@@ -8,8 +8,10 @@
 .light {
 	color-scheme: light;
 	--bg: #eeeeee;
-	--p: #313131;
+	--fg: #313131;
 	--o: #bfbfbf;
+	--p: #8bc0a2;
+	background-color: var(--bg);
 	background-color: var(--bg);
 	color: var(--fg);
 }
@@ -19,10 +21,18 @@
 	--bg: #262626;
 	--fg: #fafafa;
 	--o: #444444;
+	--p: #afdbc2;
 	background-color: var(--bg);
 	color: var(--fg);
 }
 
 .under:hover {
 	text-decoration: underline 1.5px;
+}
+
+#nprogress .bar {
+	background-color: var(--p);
+	height: 4px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }

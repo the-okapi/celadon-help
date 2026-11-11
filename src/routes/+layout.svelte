@@ -1,13 +1,32 @@
 <script lang="ts">
+	import 'nprogress/nprogress.css';
+	import './layout.css';
 	import type { Path } from '$app/types';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import { locales, localizeHref } from '#lib/paraglide/runtime.js';
-	import './layout.css';
 	import favicon from '#lib/assets/favicon.png';
 	import { ModeWatcher } from 'mode-watcher';
 	import NavBar from './NavBar.svelte';
 	import { m } from '#lib/paraglide/messages.js';
+	import nprogress from 'nprogress';
+	import { onMount } from 'svelte';
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
+
+	onMount(() => {
+		nprogress.configure({
+			showSpinner: false,
+			template: '<div class="bar" role="bar"></div>'
+		});
+	});
+
+	beforeNavigate(() => {
+		nprogress.start();
+	});
+
+	afterNavigate(() => {
+		nprogress.done();
+	});
 
 	let { children } = $props();
 </script>
